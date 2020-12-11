@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Lối Nhỏ"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/singer"
+        android:layout_below="@id/song"
+        android:layout_marginLeft="20dp"
+        android:textColor="#8F9393"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="Đen Vâu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_below="@+id/singer"
+        android:layout_marginLeft="30dp"
+        android:layout_above="@id/title"
+        android:background="@drawable/denvau"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_above="@+id/seekBar"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="Music"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <SeekBar
+        android:layout_above="@id/linear"
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btOn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:background="@drawable/start" />
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btStart"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/play" />
+        <ImageButton
+            android:id="@+id/btTua"
+            android:layout_marginLeft="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/pause" />
+        <ImageButton
+            android:id="@+id/btOff"
+            android:layout_marginLeft="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/stop" />
+
+    </LinearLayout>
+</RelativeLayout>
